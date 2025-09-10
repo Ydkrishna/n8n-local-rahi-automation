@@ -1,0 +1,70 @@
+{
+  "name": "first-test-workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "260b9da3-6e0d-48bd-9548-48ad20fbdcf8",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "75bfdf8a-7ce8-49e4-bd9c-9e37d47dc640",
+              "name": "Message",
+              "value": "Hello from Local Rahi Automation 🎉",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "2a54180e-8e3a-4c6c-8c03-457c1f96c456",
+      "name": "Edit Fields",
+      "alwaysOutputData": true,
+      "onError": "continueErrorOutput"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "695e883f-a581-4b35-b54a-1b05d4f1c9eb",
+  "meta": {
+    "instanceId": "ac8f390252bc021308e6730dc5795ae5cd16c779896c0bdfb3e6db07795d3ffa"
+  },
+  "id": "z3i92xv1xaIDbiNX",
+  "tags": []
+}
